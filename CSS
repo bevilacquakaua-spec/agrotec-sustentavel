@@ -1,1 +1,495 @@
+/* ==========================================
+   CONFIGURAÇÕES GERAIS E RESETS
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background-color: #f4f7f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   CABEÇALHO (MENU DE NAVEGAÇÃO)
+   ========================================== */
+header {
+    background-color: #2e7d32; /* Verde identidade do Agrinho */
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Garante que quebre linha em telas pequenas */
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;/* ==========================================
+   CONFIGURAÇÕES GERAIS E RESETS
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   CABEÇALHO (MENU DE NAVEGAÇÃO)
+   ========================================== */
+header {
+    background-color: #2e7d32; /* Verde identidade do Agrinho */
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Garante que quebre linha em telas pequenas */
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a5d6a7;
+}
+
+/* ==========================================
+   BANNER PRINCIPAL (HERO)
+   ========================================== */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.banner-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner-text p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   SEÇÕES DE CONTEÚDO (SOBRE)
+   ========================================== */
+.conteudo {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.conteudo h2 {
+    color: #2e7d32;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+/* Linha decorativa embaixo do título */
+.conteudo h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #388e3c;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.conteudo p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: #555;
+}
+
+/* ==========================================
+   SEÇÃO DOS PILARES (CARDS)
+   ========================================== */
+.cards-section {
+    background-color: #e8f5e9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cards-section h2 {
+    color: #2e7d32;
+    margin-bottom: 45px;
+    font-size: 2.2rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    border-bottom: 4px solid #2e7d32;
+}
+
+.card h3 {
+    color: #388e3c;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* ==========================================
+   SEÇÃO DO AUTOR (KAUÃ BEVILACQUA)
+   ========================================== */
+.autor-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.autor-section h2 {
+    color: #2e7d32;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.perfil {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    border-left: 6px solid #2e7d32;
+    text-align: left;
+}
+
+.perfil h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #2e7d32;
+}
+
+.perfil p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   RODAPÉ (FOOTER)
+   ========================================== */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   RESPONSIVIDADE (PARA CELULARES)
+   ========================================== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .banner-text h2 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1.1rem;
+    }
+
+    .conteudo h2, .cards-section h2, .autor-section h2 {
+        font-size: 1.8rem;
+    }
+}
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a5d6a7;
+}
+
+/* ==========================================
+   BANNER PRINCIPAL (HERO)
+   ========================================== */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.banner-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner-text p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   SEÇÕES DE CONTEÚDO (SOBRE)
+   ========================================== */
+.conteudo {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.conteudo h2 {
+    color: #2e7d32;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+/* Linha decorativa embaixo do título */
+.conteudo h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #388e3c;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.conteudo p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: #555;
+}
+
+/* ==========================================
+   SEÇÃO DOS PILARES (CARDS)
+   ========================================== */
+.cards-section {
+    background-color: #e8f5e9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cards-section h2 {
+    color: #2e7d32;
+    margin-bottom: 45px;
+    font-size: 2.2rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    border-bottom: 4px solid #2e7d32;
+}
+
+.card h3 {
+    color: #388e3c;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* ==========================================
+   SEÇÃO DO AUTOR (KAUÃ BEVILACQUA)
+   ========================================== */
+.autor-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.autor-section h2 {
+    color: #2e7d32;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.perfil {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    border-left: 6px solid #2e7d32;
+    text-align: left;
+}
+
+.perfil h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #2e7d32;
+}
+
+.perfil p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   RODAPÉ (FOOTER)
+   ========================================== */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   RESPONSIVIDADE (PARA CELULARES)
+   ========================================== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .banner-text h2 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1.1rem;
+    }
+
+    .conteudo h2, .cards-section h2, .autor-section h2 {
+        font-size: 1.8rem;
+    }
+}
